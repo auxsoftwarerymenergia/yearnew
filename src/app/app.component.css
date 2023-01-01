@@ -1,0 +1,29 @@
+
+
+.card {
+    margin: 30px 10%;
+    height: calc(100vh - 60px);
+    width: calc(100vw - 20%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(212,212,214,1) 0%, rgba(27,203,238,1) 100%);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.card img {
+    width: 40vw;
+    max-width: 400px;
+    margin: auto;
+}
+
+.card h4, .card audio {
+    margin: auto;
+}
+
+.card h4 {
+    font-size: 20px;
+    color: rgb(27, 62, 95);
+    padding: 0 10px;
+    text-align: justify;
+}
