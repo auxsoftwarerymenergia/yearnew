@@ -11,8 +11,8 @@ export class AppComponent implements OnInit {
   variable = [
 
     {
-      nombre: "",
-      imagen: "assets/homero.png",
+      nombre: "Hola pérdida",
+      imagen: "assets/perdidobg.png",
       sonido: "",
       ngif: true
     }
@@ -31,27 +31,30 @@ export class AppComponent implements OnInit {
               ngif: true
             }
           ]
+        } else {
+          if (this.router.url == "/#/34269") {
+            this.variable = [
+              {
+                nombre: "Hola Diany, reproduce el audio",
+                imagen: "assets/goku.png",
+                sonido: "assets/diany.mp3",
+                ngif: true
+              }
+            ]
+          }
+           else  {
+            this.variable = [
+              {
+                nombre: "Estas pérdida?? porque veo que anotaste mal la dirección hahahahah",
+                imagen: "assets/perdidobg.jpg",
+                sonido: "",
+                ngif: false
+              }
+            ]
+          }
+
         }
-        if (this.router.url == "/#/34269") {
-          this.variable = [
-            {
-              nombre: "Hola Diany, reproduce el audio",
-              imagen: "assets/goku.png",
-              sonido: "assets/diany.mp3",
-              ngif: true
-            }
-          ]
-        }
-        else  {
-          this.variable = [
-            {
-              nombre: "Estas pérdida?? porque veo que anotaste mal la dirección hahahahah",
-              imagen: "assets/perdidobg.jpg",
-              sonido: "",
-              ngif: false
-            }
-          ]
-        }
+        
       }
     }
     )
